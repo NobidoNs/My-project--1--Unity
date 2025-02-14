@@ -1,0 +1,34 @@
+{
+    "name": "VRInputActions",
+    "maps": [
+        {
+            "name": "PlayerActions",
+            "id": "d225f805-6453-4adb-84ea-21d7570597c5",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "fd0c62b0-ea83-4465-91ef-655eac9152c8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8bb9c51b-4193-4fb4-9a0e-874b54eb395f",
+                    "path": "<XRController>{LeftHand}/primary2DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
