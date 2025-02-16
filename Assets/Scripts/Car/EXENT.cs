@@ -11,6 +11,8 @@ public class CarEnterExitVR : MonoBehaviour
     private bool isInCar = false; // Флаг, находится ли игрок в машине
     private CarController carController; // Ссылка на управление машиной
 
+    public GameObject exPoint;
+
     void Start()
     {
         carController = car.GetComponent<CarController>();
@@ -35,7 +37,7 @@ public class CarEnterExitVR : MonoBehaviour
     {
         if (isInCar)
         {
-            playerRig.transform.position = car.transform.position + car.transform.right * 2; // Выход сбоку
+            playerRig.transform.position = exPoint.transform.position; // Выход сбоку
             playerRig.GetComponent<CharacterController>().enabled = true;
             isInCar = false;
             carController.isPlayerInCar = false; // Отключаем управление машиной
